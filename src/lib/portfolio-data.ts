@@ -175,34 +175,9 @@ export const education: Education[] = [
   },
 ];
 
-export interface Achievement {
-  title: string;
-  description: string;
-  icon: LucideIcon;
-}
-
-export const achievements: Achievement[] = [
-  {
-    title: "Hackathon Winner",
-    description: "Won 1st place in the annual company-wide hackathon for developing an innovative internal tool.",
-    icon: Trophy,
-  },
-  {
-    title: "App Store Feature",
-    description: "A personal project was featured on the App Store's 'New Apps We Love' section.",
-    icon: Star,
-  },
-  {
-    title: "Open Source Contributor",
-    description: "Active contributor to several popular open-source iOS libraries and frameworks.",
-    icon: Rocket,
-  },
-];
-
 export const navigationLinks = [
   { name: 'Experience', href: '#experience', icon: Briefcase },
   { name: 'Projects', href: '#projects', icon: Rocket },
   { name: 'Skills', href: '#skills', icon: Lightbulb },
   { name: 'Education', href: '#education', icon: GraduationCap },
-  { name: 'Achievements', href: '#achievements', icon: Award },
 ];
