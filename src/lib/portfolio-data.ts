@@ -20,8 +20,8 @@ import {
 
 export const personalData = {
   name: "Aditya",
-  title: "Senior iOS Developer",
-  bio: "A seasoned Senior iOS Developer with a passion for creating user-centric mobile applications. My expertise lies in Swift and architecting complex features from conception to deployment.",
+  title: "iOS Developer",
+  bio: "A seasoned iOS Developer with a passion for creating user-centric mobile applications. My expertise lies in Swift and architecting complex features from conception to deployment.",
   email: "aditya.dev@example.com",
   social: [
     { name: "GitHub", url: "https://github.com", icon: Github },
@@ -57,7 +57,7 @@ export const experiences: Experience[] = [
 
 export interface Project {
   title: string;
-  description: string;
+  description: string[];
   technologies: string[];
   imageUrl: string;
   imageHint: string;
@@ -67,22 +67,30 @@ export interface Project {
 export const projects: Project[] = [
   {
     title: "RedDoorz – Hotel Booking App",
-    description: "Built and maintained a scalable Swift/SwiftUI MVVM app, improving structure and development speed. Added Live Activities and performed performance tuning with Instruments to improve responsiveness.",
+    description: [
+      "Built and maintained a scalable Swift/SwiftUI MVVM app, improving structure, development speed, and overall maintainability.",
+      "Added Live Activities and performed performance tuning with Instruments, improving responsiveness and reducing crashes."
+    ],
     technologies: ["SwiftUI", "Combine", "CoreData", "MapKit", "MVVM", "Live Activities"],
     imageUrl: "https://picsum.photos/seed/hotelApp/600/400",
     imageHint: "hotel booking",
-    link: "https://github.com"
   },
   {
     title: "RedSeller – Partner Platform",
-    description: "Integrated Apple’s native translation APIs and delivered SceneKit-based 3D features. Collaborated with cross-functional teams to ship consistent, well-documented features.",
+    description: [
+      "Integrated Apple’s native translation APIs and delivered SceneKit-based 3D features to enhance speed and user engagement.",
+      "Collaborated with cross-functional teams to ship consistent, well-documented features across platforms."
+    ],
     technologies: ["Swift", "UIKit", "SceneKit", "Translation APIs", "REST APIs"],
     imageUrl: "https://picsum.photos/seed/redseller/600/400",
     imageHint: "partner platform",
   },
   {
     title: "Grow – Travel and Rewards App",
-    description: "Developed reusable SwiftUI modules and custom animations for UI consistency. Improved cold-start performance and optimized SDK initialization for faster app launches.",
+    description: [
+      "Developed reusable SwiftUI modules and custom animations to ensure UI consistency and reduce repeated effort across apps.",
+      "Improved cold-start performance and optimized SDK initialization for faster app launches."
+    ],
     technologies: ["SwiftUI", "Combine", "Core Animation", "Performance Tuning"],
     imageUrl: "https://picsum.photos/seed/growtravel/600/400",
     imageHint: "travel rewards",
