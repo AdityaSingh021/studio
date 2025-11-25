@@ -28,7 +28,7 @@ export const personalData = {
     { name: "LinkedIn", url: "https://linkedin.com/in/aditya-singh22", icon: Linkedin },
     { name: "Medium", url: "https://medium.com/@aditya877633", icon: BookMarked },
   ],
-  cvUrl: "#",
+  cvUrl: "https://drive.google.com/file/d/1ZL3jMrBjR0yNnK1OL6ZbuZ0gVqGrV7Z7/view?usp=sharing",
 };
 
 export interface Experience {
@@ -72,7 +72,7 @@ export const projects: Project[] = [
       "RedDoorz is a large-scale hotel booking application used across Southeast Asia, allowing users to discover budget stays, compare prices, apply promotions, and manage reservations. The app delivers a seamless booking experience with real-time availability, secure payments, and a polished, travel-friendly UI.",
     ],
     technologies: ["SwiftUI", "Combine", "CoreData", "MapKit", "MVVM", "Live Activities"],
-    imageUrl: "/projects/reddoorz-app.jpeg",
+    imageUrl: "https://images.unsplash.com/photo-1618773928121-c32242e63f39?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     imageHint: "hotel room",
     link: "#",
   },
