@@ -17,13 +17,9 @@ import {
   Trophy,
   Rocket,
   BookMarked,
+  Architecture,
+  Wrench,
 } from 'lucide-react';
-import { PlaceHolderImages } from './placeholder-images';
-
-const hotelAppImage = PlaceHolderImages.find(img => img.id === 'hotel-app');
-const partnerPlatformImage = PlaceHolderImages.find(img => img.id === 'partner-platform');
-const rewardsAppImage = PlaceHolderImages.find(img => img.id === 'rewards-app');
-
 
 export const personalData = {
   name: "Aditya",
@@ -80,8 +76,8 @@ export const projects: Project[] = [
       "Added Live Activities and performed performance tuning with Instruments, improving responsiveness and reducing crashes."
     ],
     technologies: ["SwiftUI", "Combine", "CoreData", "MapKit", "MVVM", "Live Activities"],
-    imageUrl: hotelAppImage?.imageUrl || "https://picsum.photos/seed/hotelApp/600/400",
-    imageHint: hotelAppImage?.imageHint || "hotel booking",
+    imageUrl: "https://picsum.photos/seed/hotelApp/600/400",
+    imageHint: "hotel booking",
   },
   {
     title: "RedSeller – Partner Platform",
@@ -90,8 +86,8 @@ export const projects: Project[] = [
       "Collaborated with cross-functional teams to ship consistent, well-documented features across platforms."
     ],
     technologies: ["Swift", "UIKit", "SceneKit", "Translation APIs", "REST APIs"],
-    imageUrl: partnerPlatformImage?.imageUrl || "https://picsum.photos/seed/redseller/600/400",
-    imageHint: partnerPlatformImage?.imageHint || "partner platform",
+    imageUrl: "https://picsum.photos/seed/redseller/600/400",
+    imageHint: "partner platform",
   },
   {
     title: "Grow – Travel and Rewards App",
@@ -100,8 +96,8 @@ export const projects: Project[] = [
       "Improved cold-start performance and optimized SDK initialization for faster app launches."
     ],
     technologies: ["SwiftUI", "Combine", "Core Animation", "Performance Tuning"],
-    imageUrl: rewardsAppImage?.imageUrl || "https://picsum.photos/seed/growtravel/600/400",
-    imageHint: rewardsAppImage?.imageHint || "travel rewards",
+    imageUrl: "https://picsum.photos/seed/growtravel/600/400",
+    imageHint: "travel rewards",
   },
 ];
 
@@ -121,32 +117,42 @@ export const skillCategories: SkillCategory[] = [
     ],
   },
   {
-    title: "Technologies & Frameworks",
+    title: "Frameworks & APIs",
     icon: Smartphone,
     skills: [
-      { name: "SwiftUI", icon: null },
-      { name: "UIKit", icon: null },
-      { name: "Combine", icon: null },
-      { name: "XCTest", icon: null },
+        { name: "SwiftUI", icon: null },
+        { name: "UIKit", icon: null },
+        { name: "SceneKit", icon: null },
+        { name: "WidgetKit", icon: null },
+        { name: "ActivityKit", icon: null },
+        { name: "XCTest", icon: null },
+        { name: "URLSession", icon: null },
+        { name: "WebSockets", icon: null },
+        { name: "Push Notifications", icon: null },
+        { name: "REST APIs", icon: null },
+        { name: "JSON", icon: null },
     ],
   },
   {
-    title: "Databases & Backend",
-    icon: Server,
+    title: "Architecture & Data",
+    icon: Architecture,
     skills: [
+      { name: "MVVM", icon: null },
+      { name: "MVC", icon: null },
+      { name: "Core Data", icon: Database },
       { name: "Firebase", icon: Database },
-      { name: "CoreData", icon: null },
-      { name: "Realm", icon: null },
     ],
   },
   {
     title: "Tools & Platforms",
-    icon: SquareTerminal,
+    icon: Wrench,
     skills: [
-      { name: "Git & GitHub", icon: GitMerge },
-      { name: "Xcode", icon: null },
-      { name: "Jira", icon: null },
-      { name: "CI/CD", icon: null },
+      { name: "Git", icon: GitMerge },
+      { name: "Xcode", icon: SquareTerminal },
+      { name: "TestFlight", icon: null },
+      { name: "Postman", icon: null },
+      { name: "App Store", icon: null },
+      { name: "Provisioning profiles", icon: null },
     ],
   },
 ];
