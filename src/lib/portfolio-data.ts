@@ -17,6 +17,9 @@ import {
   Trophy,
   Rocket
 } from 'lucide-react';
+import { PlaceHolderImages } from './placeholder-images';
+
+const heroImage = PlaceHolderImages.find(img => img.id === 'hero');
 
 export const personalData = {
   name: "Aditya",
@@ -28,7 +31,7 @@ export const personalData = {
     { name: "LinkedIn", url: "https://linkedin.com", icon: Linkedin },
   ],
   cvUrl: "#",
-  imageUrl: "https://storage.googleapis.com/aai-web-samples/aditya-portrait.jpg",
+  imageUrl: heroImage?.imageUrl || "https://storage.googleapis.com/aai-web-samples/aditya-portrait.jpg",
 };
 
 export interface Experience {
@@ -65,6 +68,11 @@ export interface Project {
   link?: string;
 }
 
+const hotelAppImage = PlaceHolderImages.find(img => img.id === 'hotel-app');
+const partnerPlatformImage = PlaceHolderImages.find(img => img.id === 'partner-platform');
+const rewardsAppImage = PlaceHolderImages.find(img => img.id === 'rewards-app');
+
+
 export const projects: Project[] = [
   {
     title: "RedDoorz – Hotel Booking App",
@@ -73,8 +81,8 @@ export const projects: Project[] = [
       "Added Live Activities and performed performance tuning with Instruments, improving responsiveness and reducing crashes."
     ],
     technologies: ["SwiftUI", "Combine", "CoreData", "MapKit", "MVVM", "Live Activities"],
-    imageUrl: "https://picsum.photos/seed/hotelApp/600/400",
-    imageHint: "hotel booking",
+    imageUrl: hotelAppImage?.imageUrl || "https://picsum.photos/seed/hotelApp/600/400",
+    imageHint: hotelAppImage?.imageHint || "hotel booking",
   },
   {
     title: "RedSeller – Partner Platform",
@@ -83,8 +91,8 @@ export const projects: Project[] = [
       "Collaborated with cross-functional teams to ship consistent, well-documented features across platforms."
     ],
     technologies: ["Swift", "UIKit", "SceneKit", "Translation APIs", "REST APIs"],
-    imageUrl: "https://picsum.photos/seed/redseller/600/400",
-    imageHint: "partner platform",
+    imageUrl: partnerPlatformImage?.imageUrl || "https://picsum.photos/seed/redseller/600/400",
+    imageHint: partnerPlatformImage?.imageHint || "partner platform",
   },
   {
     title: "Grow – Travel and Rewards App",
@@ -93,8 +101,8 @@ export const projects: Project[] = [
       "Improved cold-start performance and optimized SDK initialization for faster app launches."
     ],
     technologies: ["SwiftUI", "Combine", "Core Animation", "Performance Tuning"],
-    imageUrl: "https://picsum.photos/seed/growtravel/600/400",
-    imageHint: "travel rewards",
+    imageUrl: rewardsAppImage?.imageUrl || "https://picsum.photos/seed/growtravel/600/400",
+    imageHint: rewardsAppImage?.imageHint || "travel rewards",
   },
 ];
 
