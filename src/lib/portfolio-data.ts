@@ -15,7 +15,8 @@ import {
   type LucideIcon,
   Star,
   Trophy,
-  Rocket
+  Rocket,
+  BookMarked,
 } from 'lucide-react';
 import { PlaceHolderImages } from './placeholder-images';
 
@@ -28,10 +29,11 @@ export const personalData = {
   name: "Aditya",
   title: "iOS Developer",
   bio: "A seasoned iOS Developer with a passion for creating user-centric mobile applications. My expertise lies in Swift and architecting complex features from conception to deployment.",
-  email: "aditya.dev@example.com",
+  email: "singh.adi0319@gmail.com",
   social: [
-    { name: "GitHub", url: "https://github.com", icon: Github },
-    { name: "LinkedIn", url: "https://linkedin.com", icon: Linkedin },
+    { name: "GitHub", url: "https://github.com/AdityaSingh021", icon: Github },
+    { name: "LinkedIn", url: "https://linkedin.com/in/aditya-singh22", icon: Linkedin },
+    { name: "Medium", url: "https://medium.com/@aditya877633", icon: BookMarked },
   ],
   cvUrl: "#",
 };
