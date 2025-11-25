@@ -67,20 +67,19 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: "RedDoorz – Hotel Booking App",
+    title: "RedDoorz App (Hotel Booking Platform)",
     description: [
-      "Contributed to the development of the RedDoorz App, a travel-platform used by thousands of users to discover, book and manage budget-hotel stays across Southeast Asia.",
-      "Collaborated with product, design and backend teams to enhance UI/UX, optimize performance for mobile devices, enable localization across markets (Indonesia, Philippines, etc.), and maintain strong app stability and scalability."
+      "RedDoorz is a large-scale hotel booking application used across Southeast Asia, allowing users to discover budget stays, compare prices, apply promotions, and manage reservations. The app delivers a seamless booking experience with real-time availability, secure payments, and a polished, travel-friendly UI.",
     ],
     technologies: ["SwiftUI", "Combine", "CoreData", "MapKit", "MVVM", "Live Activities"],
-    imageUrl: "/projects/reddoorz-app.jpeg",
+    imageUrl: "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     imageHint: "hotel room",
     link: "#",
   },
   {
-    title: "RedSeller – Partner Platform",
+    title: "RedSeller App (Reseller / Affiliate Platform)",
     description: [
-      "Developed core features for the RedSeller reseller application used by RedDoorz partners to promote hotel rooms, track bookings, and monitor earnings."
+      "RedSeller is a reseller-focused platform that enables users to promote RedDoorz properties, share deals, and earn commissions from bookings. It provides dashboards, promotional tools, and booking insights to help resellers manage performance and grow their earnings."
     ],
     technologies: ["Swift", "UIKit", "SceneKit", "Translation APIs", "REST APIs"],
     imageUrl: "/projects/redseller-app.jpeg",
@@ -88,11 +87,9 @@ export const projects: Project[] = [
     link: "#",
   },
   {
-    title: "Grow with RedDoorz",
+    title: "Grow with RedDoorz App (Property Owner Platform)",
     description: [
-      "Contributed to the development of the Grow with RedDoorz app, a property-owner platform enabling hotel partners to monitor performance, manage billing/payments and optimize operations.",
-      "Implemented key features such as a daily/monthly performance dashboard (gross revenue, occupancy, average room rate), live pricing requests, and booking check-in/out flows.",
-      "Collaborated with cross-functional teams (backend, design, product) to deliver localized UX, support multi-property owners, and ensure stable performance across mobile platforms."
+      "Grow is an operational app designed for RedDoorz partner properties to monitor occupancy, manage billing, check earnings, and optimize hotel performance. It provides owners with real-time dashboards, live pricing tools, and operational workflows to support daily hotel management."
     ],
     technologies: ["SwiftUI", "Combine", "Core Animation", "Performance Tuning"],
     imageUrl: "/projects/grow-app.jpeg",
