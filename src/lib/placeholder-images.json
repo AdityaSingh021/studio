@@ -1,3 +1,24 @@
 {
-  "placeholderImages": []
-}
+  "placeholderImages": [
+    {
+      "id": "hero",
+      "description": "A professional portrait of a software developer in a modern office.",
+      "imageUrl": "https://picsum.photos/seed/hero-portrait/600/800",
+      "imageHint": "developer portrait"
+    },
+    {
+      "id": "hotel-app",
+      "description": "A screenshot of a modern hotel booking application interface.",
+      "imageUrl": "https://picsum.photos/seed/hotelApp/600/400",
+      "imageHint": "hotel booking"
+    },
+    {
+      "id": "partner-platform",
+      "description": "Dashboard of a B2B partner platform showing analytics.",
+      "imageUrl": "https://picsum.photos/seed/redseller/600/400",
+      "imageHint": "partner platform"
+    },
+    {
+      "id": "rewards-app",
+      "description": "A vibrant interface for a travel and rewards mobile app.",
+      "imageUrl": "https://picsum.photos/seed/
