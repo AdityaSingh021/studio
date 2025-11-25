@@ -19,7 +19,10 @@ import {
 } from 'lucide-react';
 import { PlaceHolderImages } from './placeholder-images';
 
-const heroImage = PlaceHolderImages.find(img => img.id === 'hero');
+const hotelAppImage = PlaceHolderImages.find(img => img.id === 'hotel-app');
+const partnerPlatformImage = PlaceHolderImages.find(img => img.id === 'partner-platform');
+const rewardsAppImage = PlaceHolderImages.find(img => img.id === 'rewards-app');
+
 
 export const personalData = {
   name: "Aditya",
@@ -31,7 +34,7 @@ export const personalData = {
     { name: "LinkedIn", url: "https://linkedin.com", icon: Linkedin },
   ],
   cvUrl: "#",
-  imageUrl: heroImage?.imageUrl || "https://storage.googleapis.com/aai-web-samples/aditya-portrait.jpg",
+  imageUrl: "https://storage.googleapis.com/aai-web-samples/aditya-portrait.jpg",
 };
 
 export interface Experience {
@@ -67,11 +70,6 @@ export interface Project {
   imageHint: string;
   link?: string;
 }
-
-const hotelAppImage = PlaceHolderImages.find(img => img.id === 'hotel-app');
-const partnerPlatformImage = PlaceHolderImages.find(img => img.id === 'partner-platform');
-const rewardsAppImage = PlaceHolderImages.find(img => img.id === 'rewards-app');
-
 
 export const projects: Project[] = [
   {
