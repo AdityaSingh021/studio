@@ -27,7 +27,8 @@ export const personalData = {
     { name: "GitHub", url: "https://github.com", icon: Github },
     { name: "LinkedIn", url: "https://linkedin.com", icon: Linkedin },
   ],
-  cvUrl: "#"
+  cvUrl: "#",
+  imageUrl: "https://storage.googleapis.com/aai-web-samples/aditya-portrait.jpg",
 };
 
 export interface Experience {

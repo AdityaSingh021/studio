@@ -2,10 +2,8 @@ import Image from 'next/image';
 import { Button } from "@/components/ui/button";
 import { Download, ArrowRight } from "lucide-react";
 import { personalData } from "@/lib/portfolio-data";
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export function HeroSection() {
-  const heroImage = PlaceHolderImages.find((img) => img.id === 'hero');
   return (
     <section id="home" className="relative overflow-hidden bg-background">
       <div className="container relative grid items-center gap-12 py-20 md:grid-cols-2 lg:py-32">
@@ -44,13 +42,13 @@ export function HeroSection() {
           </div>
         </div>
         <div className="relative mx-auto h-[400px] w-[300px] md:h-[500px] md:w-[400px]">
-          {heroImage && (
+          {personalData.imageUrl && (
             <Image
-              src={heroImage.imageUrl}
+              src={personalData.imageUrl}
               alt="Portrait of Aditya"
               fill
               priority
-              data-ai-hint={heroImage.imageHint}
+              data-ai-hint="developer portrait"
               className="rounded-lg object-cover object-top shadow-lg"
             />
           )}
