@@ -11,7 +11,7 @@ export function AchievementsSection() {
     >
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         {achievements.map((achievement) => (
-          <Card key={achievement.title}>
+          <Card key={achievement.title} className="transition-all duration-300 hover:scale-105 hover:shadow-primary/20 hover:shadow-lg">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
               <CardTitle className="text-lg font-medium">
                 {achievement.title}

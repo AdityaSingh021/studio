@@ -10,7 +10,7 @@ export function Section({ id, title, subtitle, className, children, ...props }: 
   return (
     <section
       id={id}
-      className={cn("container py-16 md:py-24", className)}
+      className={cn("container py-16 md:py-24 animate-fade-in", className)}
       {...props}
     >
       <div className="mx-auto mb-12 max-w-3xl text-center">

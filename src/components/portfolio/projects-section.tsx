@@ -15,7 +15,7 @@ export function ProjectsSection() {
     >
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project) => (
-          <Card key={project.title} className="flex flex-col">
+          <Card key={project.title} className="flex flex-col transition-all duration-300 hover:scale-105 hover:shadow-primary/20 hover:shadow-lg">
             <CardHeader>
               <div className="relative h-40 w-full">
                 <Image
