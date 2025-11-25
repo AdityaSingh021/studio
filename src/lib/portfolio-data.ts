@@ -66,24 +66,24 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: "Hotel Booking App",
-    description: "A full-featured hotel booking application with a focus on a clean, intuitive user interface and a seamless booking experience.",
-    technologies: ["SwiftUI", "Combine", "CoreData", "MapKit", "MVVM"],
+    title: "RedDoorz – Hotel Booking App",
+    description: "Built and maintained a scalable Swift/SwiftUI MVVM app, improving structure and development speed. Added Live Activities and performed performance tuning with Instruments to improve responsiveness.",
+    technologies: ["SwiftUI", "Combine", "CoreData", "MapKit", "MVVM", "Live Activities"],
     imageUrl: "https://picsum.photos/seed/hotelApp/600/400",
     imageHint: "hotel booking",
     link: "https://github.com"
   },
   {
-    title: "Partner Platform",
-    description: "An enterprise-grade B2B platform for partners to manage properties and track analytics.",
-    technologies: ["Swift", "UIKit", "Firebase", "REST APIs", "Charts"],
+    title: "RedSeller – Partner Platform",
+    description: "Integrated Apple’s native translation APIs and delivered SceneKit-based 3D features. Collaborated with cross-functional teams to ship consistent, well-documented features.",
+    technologies: ["Swift", "UIKit", "SceneKit", "Translation APIs", "REST APIs"],
     imageUrl: "https://picsum.photos/seed/redseller/600/400",
     imageHint: "partner platform",
   },
   {
-    title: "Travel App Concept",
-    description: "A proof-of-concept for a travel rewards program, featuring gamification elements and a loyalty points system.",
-    technologies: ["SwiftUI", "Lottie", "Core Animation"],
+    title: "Grow – Travel and Rewards App",
+    description: "Developed reusable SwiftUI modules and custom animations for UI consistency. Improved cold-start performance and optimized SDK initialization for faster app launches.",
+    technologies: ["SwiftUI", "Combine", "Core Animation", "Performance Tuning"],
     imageUrl: "https://picsum.photos/seed/growtravel/600/400",
     imageHint: "travel rewards",
   },
