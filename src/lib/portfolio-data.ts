@@ -4,7 +4,7 @@ import {
   Server,
   Database,
   GitMerge,
-  TerminalSquare,
+  SquareTerminal,
   Linkedin,
   Github,
   Mail,
@@ -36,6 +36,7 @@ export interface Experience {
   period: string;
   description: string[];
   technologies: string[];
+  icon: LucideIcon;
 }
 
 export const experiences: Experience[] = [
@@ -50,6 +51,7 @@ export const experiences: Experience[] = [
       "Integrated REST APIs to connect the application to backend services.",
     ],
     technologies: ["Swift", "SwiftUI", "UIKit", "REST APIs", "Combine"],
+    icon: Briefcase,
   },
   // Add other relevant positions here if available
 ];
@@ -80,7 +82,7 @@ export const projects: Project[] = [
     imageHint: "partner platform",
   },
   {
-    title: "Grow Travel and Rewards App",
+    title: "Travel and Rewards App",
     description: "A concept app for a travel and rewards program. Designed and developed a proof-of-concept with a focus on engagement and gamification.",
     technologies: ["SwiftUI", "Lottie", "Core Animation", "Node.js"],
     imageUrl: "https://picsum.photos/seed/growtravel/600/400",
@@ -125,7 +127,7 @@ export const skillCategories: SkillCategory[] = [
   },
   {
     title: "Tools & Platforms",
-    icon: TerminalSquare,
+    icon: SquareTerminal,
     skills: [
       { name: "Git", icon: GitMerge },
       { name: "Xcode", icon: null },
@@ -182,4 +184,4 @@ export const navigationLinks = [
   { name: 'Skills', href: '#skills', icon: Lightbulb },
   { name: 'Education', href: '#education', icon: GraduationCap },
   { name: 'Achievements', href: '#achievements', icon: Award },
-  { name: 'AI Enhancer', href: '#ai-enhancer', icon: Star
+];
