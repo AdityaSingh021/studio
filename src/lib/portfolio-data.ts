@@ -72,7 +72,7 @@ export const projects: Project[] = [
       "RedDoorz is a large-scale hotel booking application used across Southeast Asia, allowing users to discover budget stays, compare prices, apply promotions, and manage reservations. The app delivers a seamless booking experience with real-time availability, secure payments, and a polished, travel-friendly UI.",
     ],
     technologies: ["SwiftUI", "Combine", "CoreData", "MapKit", "MVVM", "Live Activities"],
-    imageUrl: "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imageUrl: "/projects/reddoorz-app.jpeg",
     imageHint: "hotel room",
     link: "#",
   },
