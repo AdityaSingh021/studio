@@ -68,8 +68,8 @@ export const projects: Project[] = [
   {
     title: "RedDoorz – Hotel Booking App",
     description: [
-      "Built and maintained a scalable Swift/SwiftUI MVVM app, improving structure, development speed, and overall maintainability.",
-      "Added Live Activities and performed performance tuning with Instruments, improving responsiveness and reducing crashes."
+      "Contributed to the development of the RedDoorz App, a travel-platform used by thousands of users to discover, book and manage budget-hotel stays across Southeast Asia.",
+      "Collaborated with product, design and backend teams to enhance UI/UX, optimize performance for mobile devices, enable localization across markets (Indonesia, Philippines, etc.), and maintain strong app stability and scalability."
     ],
     technologies: ["SwiftUI", "Combine", "CoreData", "MapKit", "MVVM", "Live Activities"],
     imageUrl: "https://picsum.photos/seed/hotelApp/600/400",
@@ -78,18 +78,18 @@ export const projects: Project[] = [
   {
     title: "RedSeller – Partner Platform",
     description: [
-      "Integrated Apple’s native translation APIs and delivered SceneKit-based 3D features to enhance speed and user engagement.",
-      "Collaborated with cross-functional teams to ship consistent, well-documented features across platforms."
+      "Developed core features for the RedSeller reseller application used by RedDoorz partners to promote hotel rooms, track bookings, and monitor earnings."
     ],
     technologies: ["Swift", "UIKit", "SceneKit", "Translation APIs", "REST APIs"],
     imageUrl: "https://picsum.photos/seed/redseller/600/400",
     imageHint: "partner platform",
   },
   {
-    title: "Grow – Travel and Rewards App",
+    title: "Grow with RedDoorz",
     description: [
-      "Developed reusable SwiftUI modules and custom animations to ensure UI consistency and reduce repeated effort across apps.",
-      "Improved cold-start performance and optimized SDK initialization for faster app launches."
+      "Contributed to the development of the Grow with RedDoorz app, a property-owner platform enabling hotel partners to monitor performance, manage billing/payments and optimize operations.",
+      "Implemented key features such as a daily/monthly performance dashboard (gross revenue, occupancy, average room rate), live pricing requests, and booking check-in/out flows.",
+      "Collaborated with cross-functional teams (backend, design, product) to deliver localized UX, support multi-property owners, and ensure stable performance across mobile platforms."
     ],
     technologies: ["SwiftUI", "Combine", "Core Animation", "Performance Tuning"],
     imageUrl: "https://picsum.photos/seed/growtravel/600/400",
