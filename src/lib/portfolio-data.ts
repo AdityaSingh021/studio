@@ -1,7 +1,6 @@
 import {
   Code,
   Smartphone,
-  Server,
   Database,
   GitMerge,
   SquareTerminal,
@@ -9,16 +8,13 @@ import {
   Github,
   Mail,
   GraduationCap,
-  Award,
   Briefcase,
   Lightbulb,
   type LucideIcon,
-  Star,
-  Trophy,
-  Rocket,
   BookMarked,
-  Architecture,
+  Layers,
   Wrench,
+  Rocket,
 } from 'lucide-react';
 
 export const personalData = {
@@ -135,7 +131,7 @@ export const skillCategories: SkillCategory[] = [
   },
   {
     title: "Architecture & Data",
-    icon: Architecture,
+    icon: Layers,
     skills: [
       { name: "MVVM", icon: null },
       { name: "MVC", icon: null },
