@@ -73,7 +73,7 @@ export const projects: Project[] = [
       "Collaborated with product, design and backend teams to enhance UI/UX, optimize performance for mobile devices, enable localization across markets (Indonesia, Philippines, etc.), and maintain strong app stability and scalability."
     ],
     technologies: ["SwiftUI", "Combine", "CoreData", "MapKit", "MVVM", "Live Activities"],
-    imageUrl: "https://images.unsplash.com/photo-1618773928121-c32242e63f39?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imageUrl: "/projects/reddoorz-app.jpeg",
     imageHint: "hotel room",
     link: "#",
   },
@@ -83,7 +83,7 @@ export const projects: Project[] = [
       "Developed core features for the RedSeller reseller application used by RedDoorz partners to promote hotel rooms, track bookings, and monitor earnings."
     ],
     technologies: ["Swift", "UIKit", "SceneKit", "Translation APIs", "REST APIs"],
-    imageUrl: "https://picsum.photos/seed/redseller/600/400",
+    imageUrl: "/projects/redseller-app.jpeg",
     imageHint: "partner platform",
     link: "#",
   },
@@ -95,7 +95,7 @@ export const projects: Project[] = [
       "Collaborated with cross-functional teams (backend, design, product) to deliver localized UX, support multi-property owners, and ensure stable performance across mobile platforms."
     ],
     technologies: ["SwiftUI", "Combine", "Core Animation", "Performance Tuning"],
-    imageUrl: "https://picsum.photos/seed/growtravel/600/400",
+    imageUrl: "/projects/grow-app.jpeg",
     imageHint: "travel rewards",
     link: "#",
   },

@@ -3,7 +3,7 @@ import { Section } from "@/components/portfolio/section";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { projects } from "@/lib/portfolio-data";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Download } from "lucide-react";
 
 export function ProjectsSection() {
   return (
@@ -27,7 +27,7 @@ export function ProjectsSection() {
                 src={project.imageUrl}
                 alt={project.title}
                 fill
-                className="rounded-lg object-cover"
+                className="rounded-lg object-contain"
                 data-ai-hint={project.imageHint}
               />
             </div>
@@ -51,14 +51,28 @@ export function ProjectsSection() {
                   </Badge>
                 ))}
               </div>
-              {project.link && (
-                <Button asChild>
-                  <a href={project.link} target="_blank" rel="noopener noreferrer">
-                    View Project
-                    <ExternalLink className="ml-2 h-4 w-4" />
-                  </a>
-                </Button>
-              )}
+              <div className="flex gap-4">
+                {project.link && (
+                  <Button asChild>
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      View Project
+                      <ExternalLink className="ml-2 h-4 w-4" />
+                    </a>
+                  </Button>
+                )}
+                 <Button variant="outline" asChild>
+                    <a
+                      href="#"
+                    >
+                      <Download className="mr-2 h-4 w-4" />
+                      Download App
+                    </a>
+                  </Button>
+              </div>
             </div>
           </div>
         ))}
