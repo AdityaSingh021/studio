@@ -74,6 +74,7 @@ export const projects: Project[] = [
     technologies: ["SwiftUI", "Combine", "CoreData", "MapKit", "MVVM", "Live Activities"],
     imageUrl: "https://picsum.photos/seed/hotelApp/600/400",
     imageHint: "hotel booking",
+    link: "#",
   },
   {
     title: "RedSeller – Partner Platform",
@@ -83,6 +84,7 @@ export const projects: Project[] = [
     technologies: ["Swift", "UIKit", "SceneKit", "Translation APIs", "REST APIs"],
     imageUrl: "https://picsum.photos/seed/redseller/600/400",
     imageHint: "partner platform",
+    link: "#",
   },
   {
     title: "Grow with RedDoorz",
@@ -94,6 +96,7 @@ export const projects: Project[] = [
     technologies: ["SwiftUI", "Combine", "Core Animation", "Performance Tuning"],
     imageUrl: "https://picsum.photos/seed/growtravel/600/400",
     imageHint: "travel rewards",
+    link: "#",
   },
 ];
 

@@ -1,8 +1,9 @@
 import Image from "next/image";
 import { Section } from "@/components/portfolio/section";
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { projects } from "@/lib/portfolio-data";
+import { ExternalLink } from "lucide-react";
 
 export function ProjectsSection() {
   return (
@@ -11,32 +12,55 @@ export function ProjectsSection() {
       title="My Projects"
       subtitle="A selection of projects I've worked on."
     >
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        {projects.map((project) => (
-          <Card key={project.title} className="flex flex-col transition-all duration-300 hover:scale-105 hover:shadow-primary/20 hover:shadow-lg">
-            <CardHeader>
-              <div className="relative h-40 w-full">
-                <Image
-                  src={project.imageUrl}
-                  alt={project.title}
-                  fill
-                  className="rounded-t-lg object-cover"
-                  data-ai-hint={project.imageHint}
-                />
-              </div>
-            </CardHeader>
-            <CardContent className="flex-grow">
-              <CardTitle className="mb-2 text-xl">{project.title}</CardTitle>
-              <p className="text-muted-foreground">{project.description}</p>
-            </CardContent>
-            <CardFooter className="flex flex-col items-start">
-              <div className="mb-4 flex flex-wrap gap-2">
-                {project.technologies.map((tech) => (
-                  <Badge key={tech} variant="secondary">{tech}</Badge>
+      <div className="space-y-16">
+        {projects.map((project, index) => (
+          <div
+            key={project.title}
+            className={`grid items-center gap-8 md:grid-cols-2 md:gap-12`}
+          >
+            <div
+              className={`relative h-80 w-full rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 ${
+                index % 2 === 0 ? "md:order-1" : "md:order-2"
+              }`}
+            >
+              <Image
+                src={project.imageUrl}
+                alt={project.title}
+                fill
+                className="rounded-lg object-cover"
+                data-ai-hint={project.imageHint}
+              />
+            </div>
+            <div
+              className={`space-y-4 ${
+                index % 2 === 0 ? "md:order-2" : "md:order-1"
+              }`}
+            >
+              <h3 className="text-2xl font-bold text-foreground">
+                {project.title}
+              </h3>
+              <div className="space-y-3 text-muted-foreground">
+                {project.description.map((desc, i) => (
+                  <p key={i}>{desc}</p>
                 ))}
               </div>
-            </CardFooter>
-          </Card>
+              <div className="flex flex-wrap gap-2">
+                {project.technologies.map((tech) => (
+                  <Badge key={tech} variant="secondary">
+                    {tech}
+                  </Badge>
+                ))}
+              </div>
+              {project.link && (
+                <Button asChild>
+                  <a href={project.link} target="_blank" rel="noopener noreferrer">
+                    View Project
+                    <ExternalLink className="ml-2 h-4 w-4" />
+                  </a>
+                </Button>
+              )}
+            </div>
+          </div>
         ))}
       </div>
     </Section>
