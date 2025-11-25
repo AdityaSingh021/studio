@@ -2,8 +2,6 @@ import Image from "next/image";
 import { Section } from "@/components/portfolio/section";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
 import { projects } from "@/lib/portfolio-data";
 
 export function ProjectsSection() {
@@ -37,14 +35,6 @@ export function ProjectsSection() {
                   <Badge key={tech} variant="secondary">{tech}</Badge>
                 ))}
               </div>
-              {project.link && (
-                <Button asChild variant="link" className="p-0">
-                  <a href={project.link} target="_blank" rel="noopener noreferrer">
-                    View Project
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </a>
-                </Button>
-              )}
             </CardFooter>
           </Card>
         ))}
