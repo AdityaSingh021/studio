@@ -15,6 +15,7 @@ import {
   Layers,
   Wrench,
   Rocket,
+  Download,
 } from 'lucide-react';
 
 export const personalData = {
@@ -72,8 +73,8 @@ export const projects: Project[] = [
       "Collaborated with product, design and backend teams to enhance UI/UX, optimize performance for mobile devices, enable localization across markets (Indonesia, Philippines, etc.), and maintain strong app stability and scalability."
     ],
     technologies: ["SwiftUI", "Combine", "CoreData", "MapKit", "MVVM", "Live Activities"],
-    imageUrl: "https://picsum.photos/seed/hotelApp/600/400",
-    imageHint: "hotel booking",
+    imageUrl: "https://images.unsplash.com/photo-1618773928121-c32242e63f39?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imageHint: "hotel room",
     link: "#",
   },
   {
