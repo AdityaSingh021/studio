@@ -34,7 +34,6 @@ export const personalData = {
     { name: "LinkedIn", url: "https://linkedin.com", icon: Linkedin },
   ],
   cvUrl: "#",
-  imageUrl: "https://storage.googleapis.com/aai-web-samples/aditya-portrait.jpg",
 };
 
 export interface Experience {
