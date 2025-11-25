@@ -3,7 +3,7 @@ import { Section } from "@/components/portfolio/section";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { projects } from "@/lib/portfolio-data";
-import { ExternalLink, Download } from "lucide-react";
+import { Download } from "lucide-react";
 
 export function ProjectsSection() {
   return (
@@ -52,18 +52,6 @@ export function ProjectsSection() {
                 ))}
               </div>
               <div className="flex gap-4">
-                {project.link && (
-                  <Button asChild>
-                    <a
-                      href={project.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      View Project
-                      <ExternalLink className="ml-2 h-4 w-4" />
-                    </a>
-                  </Button>
-                )}
                  <Button variant="outline" asChild>
                     <a
                       href="#"
