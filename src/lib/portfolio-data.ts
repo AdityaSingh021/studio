@@ -110,7 +110,7 @@ export const skillCategories: SkillCategory[] = [
     icon: Code,
     skills: [
       { name: "Swift", icon: null },
-      { name: "Objective-C", icon: null },
+      { name: "Java", icon: null },
     ],
   },
   {
